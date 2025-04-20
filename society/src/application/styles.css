@@ -1,0 +1,66 @@
+/* styles.css */
+.root {
+    -fx-font-family: "Arial";
+    -fx-base: #ececec;
+}
+
+.tab-pane {
+    -fx-padding: 5;
+}
+
+.table-view {
+    -fx-base: #ffffff;
+    -fx-control-inner-background: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #3f51b5;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent derive(-fx-base, 80%) transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.button {
+    -fx-padding: 5 10 5 10;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-background-color: #3f51b5;
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-text-fill: #ffffff;
+}
+
+.button:hover {
+    -fx-background-color: #303f9f;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: #1a237e;
+}
+
+.text-field, .date-picker {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Arial";
+}
